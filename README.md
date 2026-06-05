@@ -1,7 +1,11 @@
-# Data Cleaning & Standardization (Nashville Housing)
-*( 🇬🇧 [Read in English](#-english-version) | 🇻🇳 [Đọc bản Tiếng Việt](#-phiên-bản-tiếng-việt) )*
+# 🛠️ SQL Project: Data Cleaning & Standardization (Nashville Housing)
+
+*( 🇬🇧 [Read in English](#english-version) | 🇻🇳 [Đọc bản Tiếng Việt](#phiên-bản-tiếng-việt) )*
+
+---
 
 ## English Version
+
 ## 1. Project Overview
 This project focuses purely on the **Data Preparation and Transformation** phase. The objective is to take a raw real estate dataset containing over 56,000 records, identify system errors (missing values, incorrect formats, duplicates), and utilize SQL to transform it into a highly structured, clean dataset ready for downstream analytical pipelines. 
 * **Tool Used:** MySQL
@@ -24,7 +28,14 @@ This project focuses purely on the **Data Preparation and Transformation** phase
 3. **Address Parsing:** Split the original `PropertyAddress` and `OwnerAddress` fields into granular columns (Address, City, State) to facilitate future geographical filtering.
 4. **Data Harmonization:** Replaced 'Y' and 'N' with 'Yes' and 'No' in the `SoldAsVacant` column.
 5. **Table Optimization:** Removed unused columns.
-6. **Deduplication:** Engineered a robust filterViệt
+6. **Deduplication:** Engineered a robust filter to delete replicated rows.
+
+
+---
+
+## Phiên bản Tiếng Việt
+*( ⬆️ [Back to English Version](#english-version) )*
+
 ## 1. Tổng quan dự án
 Dự án này tập trung thuần túy vào giai đoạn **Data Preparation và Transformation**. Mục tiêu là tiếp nhận một bộ dữ liệu thô (Raw Data) về thị trường bất động sản Nashville với hơn 56.000 bản ghi, định vị các lỗi hệ thống (thiếu sót, định dạng sai, trùng lặp) và sử dụng SQL để tinh chỉnh thành một bộ dữ liệu sạch (Clean Data) chuẩn mực, sẵn sàng cho các pipeline phân tích phía sau. 
 * **Công cụ sử dụng:** MySQL.
