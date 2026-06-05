@@ -1,5 +1,8 @@
 # 🛠️ SQL Project: Data Cleaning & Standardization (Nashville Housing)
 
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![Data Cleaning](https://img.shields.io/badge/Data_Cleaning-FF9E0F?style=for-the-badge&logo=data-databricks&logoColor=white)
+
 *( 🇬🇧 [Read in English](#english-version) | 🇻🇳 [Đọc bản Tiếng Việt](#phiên-bản-tiếng-việt) )*
 
 ---
