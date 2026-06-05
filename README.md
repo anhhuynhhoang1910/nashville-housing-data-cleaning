@@ -37,7 +37,7 @@ This project focuses purely on the **Data Preparation and Transformation** phase
 *( ⬆️ [Back to English Version](#english-version) )*
 
 ## 1. Tổng quan dự án
-Dự án này tập trung thuần túy vào giai đoạn **Data Preparation và Transformation**. Mục tiêu là tiếp nhận một bộ dữ liệu thô (Raw Data) về thị trường bất động sản Nashville với hơn 56.000 bản ghi, định vị các lỗi hệ thống (thiếu sót, định dạng sai, trùng lặp) và sử dụng SQL để tinh chỉnh thành một bộ dữ liệu sạch (Clean Data) chuẩn mực, sẵn sàng cho các pipeline phân tích phía sau. 
+Dự án này tập trung vào giai đoạn **Data Preparation và Transformation**. Mục tiêu là tiếp nhận một bộ dữ liệu thô (Raw Data) về thị trường bất động sản Nashville với hơn 56.000 bản ghi, định vị các lỗi hệ thống (thiếu sót, định dạng sai, trùng lặp) và sử dụng SQL để tinh chỉnh thành một bộ dữ liệu sạch (Clean Data) chuẩn mực, sẵn sàng cho các pipeline phân tích phía sau. 
 * **Công cụ sử dụng:** MySQL.
 
 ## 2. Kỹ thuật SQL nâng cao được áp dụng
@@ -46,7 +46,7 @@ Dự án này tập trung thuần túy vào giai đoạn **Data Preparation và 
 * **Complex String Manipulation:** Kết hợp logic `SUBSTRING_INDEX()`, `SUBSTRING()`, `LOCATE()`, và `TRIM()` để bóc tách các chuỗi địa chỉ hỗn hợp thành các trường không gian độc lập (Address, City, State).
 * **Control Flow:** Chuẩn hóa tính nhất quán của dữ liệu phân loại bằng lệnh `CASE WHEN`.
 
-## 3. Báo cáo chất lượng dữ liệu (Data Quality Impact)
+## 3. Báo cáo chất lượng dữ liệu
 * **Tính duy nhất (Uniqueness):** Phát hiện và xóa bỏ vĩnh viễn **104** dòng dữ liệu bị nhân bản (Duplicates) do lỗi nhập liệu của hệ thống.
 * **Tính toàn vẹn (Completeness):** Lấp đầy **29** ô địa chỉ bị trống (`NULL`) bằng kỹ thuật truy vết tham chiếu chéo, đạt tỷ lệ thất thoát dữ liệu 0% (Zero data loss).
 * **Tính nhất quán (Consistency):** Đồng nhất hoàn toàn cột `SoldAsVacant`, chuyển đổi hơn **450** giá trị rác ('Y', 'N') thành định dạng chuẩn ('Yes', 'No').
